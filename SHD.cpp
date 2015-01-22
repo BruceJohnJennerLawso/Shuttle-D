@@ -1523,6 +1523,7 @@ bool UMmuCrewAddCallback(void *id, char *str, void *data)
 	else if(*cPtr==4){*cPtr=5;strcpy(cPtr+42,str);}
 	else if(*cPtr==6){*cPtr=7;strcpy(cPtr+82,str);}return true;
 }
+
 void ShuttleD::AddUMmuToVessel(BOOL bStartAdding)
 {
 	if(bStartAdding==FALSE&&cAddUMmuToVessel[0]==0)

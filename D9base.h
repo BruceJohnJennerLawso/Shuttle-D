@@ -56,10 +56,11 @@ class ShuttleD :public VESSEL3
 {
 public:
     ShuttleD (OBJHANDLE hObj, int fmodel);
-
+	// constructor
 
 
 	~ShuttleD();
+	// & destructor
 
 	// In this section functions to be called in the main body of the code are specified for use later. If a function placed in here is
 	// never called later a "UNRESOLVED external" error will most likely pop up at compile-time. If a function is placed in the CPP but
@@ -95,7 +96,6 @@ public:
 	enum {CAM_VCPILOT, CAM_VCPSNGR1, CAM_VCPSNGR2, CAM_VCPSNGR3, CAM_VCPSNGR4} campos;
 
 	// This is a unique id, used to identify the ship in OrbiterSound.
-
 	int SHD;	
 
 	int  clbkConsumeBufferedKey (DWORD key, bool down, char *kstate);
